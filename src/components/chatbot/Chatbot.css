@@ -13,7 +13,6 @@ main {
   display: flex;
   flex-direction: column;
 
-  gap: 5%;
 }
 
 .chat {
@@ -31,6 +30,11 @@ main {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+.user-text, .bot-text {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .text.user-text {
@@ -87,7 +91,7 @@ main {
 
 .arrow-button {
     position: absolute;
-    top: 6px;
+    top: 7px;
     right: 0;
 
     height: 40px;
