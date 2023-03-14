@@ -1,0 +1,108 @@
+main {
+  height: 100%;
+  padding: 5% 10% 0 10%;
+}
+
+.chat-window {
+  height: 100%;
+
+  border-radius: 100px 100px 0 0;
+  background-color: #ffbebe;
+  padding: 50px 100px 0 100px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5%;
+}
+
+.chat {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 10%;
+}
+
+.text {
+  width: 50%;
+  /* min-height: 15%; */
+
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.text.user-text {
+    margin-left: auto;
+    
+}
+
+.user-text>.text-box {
+    background-color: #6F0000;
+    color: #ffffff;
+}
+
+.bot-text>.text-box {
+    color: #7A5D5D;
+}
+
+.text>img {
+    height: 75px;
+}
+
+.text-box {
+  height: 100%;
+  width: 100%;
+  
+  background-color: #ffffff;
+
+  padding: 5px 15px;
+
+  border-radius: 30px;
+}
+
+.search-bar {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid #B76464;
+  font-size: 18px;
+
+  
+}
+
+.search-bar input[placeholder] {
+  font-size: 20px;
+  font-style: italic;
+  padding: 0 10px;
+
+}
+
+.arrow-button {
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    height: 40px;
+    width: 40px;
+    border: none;
+    
+    background: url('./static/Arrow.svg') no-repeat scroll 7px 7px;
+}
+
+.arrow-button:hover {
+    opacity: 50%;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  
+}
